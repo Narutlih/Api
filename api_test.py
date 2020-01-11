@@ -49,7 +49,7 @@ row += 1
 
 count = 0
 
-for x in range(6000,10000):
+for x in range(10000,15000):
     if vk_api.users.get(user_id=users[x]['id'], fields='blacklisted', v='5.103')[0]['blacklisted'] == 0:
         if not users[x]['is_closed']:
             pause_request()
